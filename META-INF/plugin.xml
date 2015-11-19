@@ -1,0 +1,44 @@
+<idea-plugin version="2">
+    <id>com.gn.syslog</id>
+    <name>Syslog</name>
+    <version>1.0</version>
+    <vendor email="naive.gn@gmail.com" url="">Naive-GN</vendor>
+
+    <description><![CDATA[
+      Log发送工具,支持Syslog/TCP/UDP
+    ]]></description>
+
+    <change-notes><![CDATA[
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <toolWindow id="LogSender" secondary="true" icon="/general/add.png" anchor="right"
+                    factoryClass="com.gn.syslog.StartUpToolWindow">
+
+        </toolWindow>
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
